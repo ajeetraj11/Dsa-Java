@@ -1,7 +1,9 @@
 package ArraysProblems;
 
+import java.util.Arrays;
+
 public class SecondLargest {
-        public static int[] getSecondOrderElements(int n, int []a) {
+        public static int getSecondOrderElements(int n, int []a) {
             // Write your code here.
             int largest=a[0];
             int sLargest=Integer.MIN_VALUE;
@@ -16,13 +18,13 @@ public class SecondLargest {
                 }
 
             }
-            int[] result={sLargest};
-            return result ;
+            return sLargest;
         }
 
     public static void main(String[] args) {
-        int [] arr = {1,2};
-        System.out.println(getSecondOrderElements(6,arr));
+        int [] arr = {1,2,5,8,9,6};
+        int n= arr.length;
+        System.out.println(getSecondOrderElements(n,arr));
     }
     }
 
